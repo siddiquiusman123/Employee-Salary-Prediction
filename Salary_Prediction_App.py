@@ -6,7 +6,7 @@ st.title("Employee Salary Prediction App")
 
 # load The dataset , model , scalar , encoder
 
-dataset = pd.read_csv('salary_data.csv')
+dataset = pd.read_csv('Salary_Data.csv')
 model = joblib.load("Salary_prd_model.pkl")
 
 # User Input
