@@ -1,6 +1,6 @@
 # 💰 Salary Prediction App
 
-This project predicts an employee’s **Salary (in Lakhs per Annum)** using **Machine Learning models**.  
+This project predicts an employee’s **Salary** using **Machine Learning models**.  
 It is deployed as an interactive **Streamlit web application**, where users can input employee details and get instant salary predictions.
 
 ---
@@ -33,7 +33,7 @@ It is deployed as an interactive **Streamlit web application**, where users can 
 
 ## 📊 Results
 - Achieved strong performance on test data with **low MAE and RMSE**  
-- Key predictive factors: **Experience**, **Education**, **Job Title**, **Location**, **Age**  
+- Key predictive factors: **Experience**, **Education**, **Job Title**, **Age**  
 - Best performing model: **XGBoost Regressor**  
 - Model saved using `joblib` for deployment  
 
@@ -46,9 +46,9 @@ It is deployed as an interactive **Streamlit web application**, where users can 
 ---
 
 ## 🚀 How It Works
-1. User enters employee details such as **Experience**, **Education**, **Job Title**, and **Location**.  
+1. User enters employee details such as **Experience**, **Education**, **Job Title**, and **Age**.  
 2. Data is **encoded** and **scaled** using the same pipeline as in training.  
-3. The trained model predicts the **expected salary (in Lakhs)**.  
+3. The trained model predicts the **expected salary**.  
 4. The result is displayed instantly with confidence.  
 
 ---
@@ -67,13 +67,13 @@ It is deployed as an interactive **Streamlit web application**, where users can 
 | Experience | Number of years in job |
 | Education | Highest qualification |
 | Job Title | Employee position |
-| Location | City / region |
 | Age | Employee age |
 
 ---
 
-## 🚀 How to Run Locally
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/salary-prediction.git
-   cd salary-prediction
+## ✨ Author
+👤 **Siddiqui Usman Ahmed Siraj Ahmed**  
+
+📧 siddiquiusman915256@gmail.com  
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/usman-siddiqui-948006347)  
