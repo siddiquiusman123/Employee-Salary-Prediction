@@ -1,6 +1,9 @@
 import pandas as pd
 import streamlit as st
 import joblib
+from sklearn.pipeline import make_pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 
 st.title("Employee Salary Prediction App")
 
