@@ -4,6 +4,7 @@ import joblib
 from sklearn.pipeline import make_pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OrdinalEncoder, StandardScaler
+from xgboost import XGBRegressor
 
 st.title("Employee Salary Prediction App")
 
@@ -28,4 +29,5 @@ input_df = pd.DataFrame(input_data, columns=columnss)
 # Prediction
 if st.button("Predict"):
     prediction = model.predict(input_df)
+
     st.success(f"Estimated Salary : {prediction[0]:.2f} ₹")
