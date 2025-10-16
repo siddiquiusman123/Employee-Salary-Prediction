@@ -1,15 +1,13 @@
 import pandas as pd
 import streamlit as st
 import joblib
-import os
 
 st.title("Employee Salary Prediction App")
 
 # load The dataset , model , scalar , encoder
 
 dataset = pd.read_csv('Salary_Data.csv')
-model_path = os.path.join(os.path.dirname(__file__), "Salary_prd_model.pkl")
-model = joblib.load(model_path)
+model = joblib.load("Salary_prd_model.pkl")
 
 
 # User Input
