@@ -1,18 +1,14 @@
-import pandas as pd
 import streamlit as st
+import pandas as pd
+import numpy as np
 import joblib
-from sklearn.pipeline import make_pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OrdinalEncoder, StandardScaler
-from xgboost import XGBRegressor
 
 st.title("Employee Salary Prediction App")
 
-# load The dataset , model , scalar , encoder
+# Load dataset and model safely for Streamlit
 
-dataset = pd.read_csv('Salary_Data.csv')
-model = joblib.load("Salary_prd_model.pkl")
-
+dataset = pd.read_csv("Salary_Data.csv")
+pipeline = joblib.load("salary_prd_pipeline.pkl")
 
 # User Input
 age = st.number_input("Age",min_value=10 , max_value=100)
@@ -28,6 +24,5 @@ input_df = pd.DataFrame(input_data, columns=columnss)
 
 # Prediction
 if st.button("Predict"):
-    prediction = model.predict(input_df)
-
+    prediction = pipeline.predict(input_df)
     st.success(f"Estimated Salary : {prediction[0]:.2f} ₹")
