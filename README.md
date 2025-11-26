@@ -41,7 +41,7 @@ It is deployed as an interactive **Streamlit web application**, where users can 
 
 ## 🌐 Live Demo
 🔗 Click here to try the app:  
-👉 [Salary Prediction Streamlit App](#) *(Add your app link here once deployed)*  
+👉 [Salary Prediction Streamlit App](#) *(https://employee-salary-prediction-lja4dtagfb2pe6axjkxryp.streamlit.app/)*  
 
 ---
 
